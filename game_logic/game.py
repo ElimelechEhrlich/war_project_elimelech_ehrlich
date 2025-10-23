@@ -3,7 +3,7 @@ from utils import deck
 def create_player(name:str='AI'):
     hand = []
     won_pile = []
-    print ({"name":name,"hand":[],"won_pile":[]})
+    return ({"name":name,"hand":[],"won_pile":[]})
 
 
 def init_game():
