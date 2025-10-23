@@ -12,17 +12,16 @@ def init_game():
     player2 = create_player()['hend'].append[Current_deck[26:-1]]
     return  {"deck": Current_deck ,"player_1": player1,"player_2": player2}
 
-Corrent_game = init_game()
-def play_round(Corrent_game['player_1']: dict, Corrent_game['player_2']: dict):
-    hend_of_player1 = Corrent_game['player_1'['hend']]
-    hend_of_player2 = Corrent_game['player_2'['hend']]
+def play_round(player_1: dict, player_2: dict):
+    hend_of_player1 = player_1['hend']]
+    hend_of_player2 = player_2['hend']]
     Compared = deck.compare_cards(hend_of_player1[-1], hend_of_player2[-1])
     if  Compared == 'p1':
         print ('P1 Winner!!!')
         Corrent_game['player_1'['won_pile']].append[hend_of_player1.pop[-1]]
     elif  Compared == 'p2':
         print ('P2 Winner!!!')
-        Corrent_game['player_2'['won_pile']].append[hend_of_player2.pop[-1]]
+        player_2['won_pile'].append[hend_of_player2.pop[-1]]
     print ('by hend p1: ',len(hend_of_player1))
     print ('by hend p1: ',len(hend_of_player2))
 
