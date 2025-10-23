@@ -1,6 +1,14 @@
+from utils import deck
 
-create_player(name:str) -> dict
+def create_player(name:str):
+    return {"name":"","hand":[],"won_pile":[]}
 
-init_game()->dict
+def init_game():
+    
 
-play_round(p1:dict,p2:dict)
+    return  {"deck": "<the deck dict you created, shuffled>","player_1": "<human player dict you created>","player_2": "<AI player dict you created>"}
+
+def play_round(p1:dict,p2:dict):
+    return 
+
+
