@@ -14,11 +14,11 @@ def create_card(rank:str,suite:str):
 def compare_cards(p1_card:dict, p2_card:dict):
     try:
         if p1_card['value'] > p2_card['value']:
-            print ('p1')
+            return ('p1')
         elif p2_card['value'] > p1_card['value']:
-            print ('p2')
+            return ('p2')
         elif p2_card['value'] == p1_card['value']:
-            print ('WAR')
+            return ('WAR')
     except:
         print (f'"value" key is does not exist in Or its value is not of type number at least one of the dictionaries')
     return
@@ -44,4 +44,5 @@ def shuffle(deck:list[dict]):
 
 
 
-         
+
+
