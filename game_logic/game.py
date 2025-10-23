@@ -9,12 +9,14 @@ def create_player(name:str='AI'):
 def init_game():
     Current_deck = [deck.shuffle(deck.create_deck())]
     player1 = create_player('eli')
-    playet2 = create_player()
+    player2 = create_player()
     hend_of_player1 = player1['hand']
     hend_of_player2 = player2['hand']
-    cards_player1 = hend_of_player1.append[Current_deck[0:26]]
-    cards_player2 = hend_of_player2.append[Current_deck[26:-1]]
-    return  {"deck": Current_deck ,"player_1": cards_player1,"player_2": cards_player2}
+    cards_for_player1 = Current_deck[0:26]
+    cards_for_player2 = Current_deck[26:-1]
+    add_cards_player1 = hend_of_player1.append[cards_for_player1]
+    add_cards_player2 = hend_of_player2.append[cards_for_player1]
+    return  {"deck": Current_deck ,"player_1": add_cards_player1,"player_2": add_cards_player2}
 
 def play_round(player_1: dict, player_2: dict):
     hend_of_player1 = player_1['hand']
