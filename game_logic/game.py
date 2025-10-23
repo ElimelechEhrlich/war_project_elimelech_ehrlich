@@ -12,9 +12,9 @@ def init_game():
     player2 = create_player()
     hend_of_player1 = player1['hand']
     hend_of_player2 = player2['hand']
-    add_cards_player1 = hend_of_player1.extend(Current_deck[0:26])
-    add_cards_player2 = hend_of_player2.extend(Current_deck[26:-1])
-    return  {"deck": Current_deck ,"player_1": add_cards_player1,"player_2": add_cards_player2}
+    hend_of_player1.extend(Current_deck[0:26])
+    hend_of_player2.extend(Current_deck[26:-1])
+    return  {"deck": Current_deck ,"player_1": player1 ,"player_2": player1}
 
 def play_round(player_1: dict, player_2: dict):
     hend_of_player1 = player_1['hand']
