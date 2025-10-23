@@ -12,8 +12,8 @@ def init_game():
     player2 = create_player()['hend'].append[Current_deck[26:-1]]
     return  {"deck": Current_deck ,"player_1": player1,"player_2": player2}
 
-def play_round(player_1: dict, player_2: dict):
-    Corrent_game = init_game()
+Corrent_game = init_game()
+def play_round(Corrent_game['player_1']: dict, Corrent_game['player_2']: dict):
     hend_of_player1 = Corrent_game['player_1'['hend']]
     hend_of_player2 = Corrent_game['player_2'['hend']]
     Compared = deck.compare_cards(hend_of_player1[-1], hend_of_player2[-1])
