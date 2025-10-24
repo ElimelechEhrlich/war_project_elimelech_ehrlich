@@ -1,7 +1,7 @@
 import random
 
 def create_card(rank:str,suite:str):
-    ranks = {'2' : '2' , '3' : '3' , '4' : '4' , '5' : '5' , '6' : '6' , '7' : '7' , '8' : '8' , '9' : '9' , '10' : '10' ,  'J' : '11' , 'Q' : '12' , 'K' : '13' , 'A' : '14'}
+    ranks = {'2' : 2 , '3' : 3 , '4' : 4 , '5' : 5 , '6' : 6 , '7' : 7 ,   '8' : 8 , '9' : 9 , '10' : 10 ,  'J' : 11 , 'Q' : 12 , 'K' : 13 , 'A' : 14}
     suites = ['H', 'C', 'D', 'S']
     if rank in ranks.keys() and suite in suites:
         return ({'rank': rank, 'suite': suite, 'value': ranks[rank]})
@@ -11,16 +11,17 @@ def create_card(rank:str,suite:str):
 
 def compare_cards(p1_card:dict, p2_card:dict):
     try:
-        if p1_card['rank'] > p2_card['rank']:
+        if p1_card['value'] > p2_card['value']:
             return ('p1')
-        elif p2_card['rank'] > p1_card['rank']:
+        elif p2_card['value'] > p1_card['value']:
             return ('p2')
-        elif p2_card['rank'] == p1_card['rank']:
+        elif p2_card['value'] == p1_card['value']:
             return ('WAR')
     except:
         print (f'"value" key is does not exist in Or its value is not of type number at least one of the dictionaries')
     return
-                                      
+print (compare_cards(create_card('A', 'S'), create_card('K', 'D')))    
+print (create_card('A', 'D'))                
 def create_deck(): 
     ranks = {'2' : '2' , '3' : '3' , '4' : '4' , '5' : '5' , '6' : '6' , '7' : '7' , '8' : '8' , '9' : '9' , '10' : '10' , 'J' : '11' , 'Q' : '12' , 'K' : '13' , 'A' : '12'}
     suites = ['H', 'C', 'D', 'S']
