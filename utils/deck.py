@@ -19,11 +19,10 @@ def compare_cards(p1_card:dict, p2_card:dict):
             return ('WAR')
     except:
         print (f'"value" key is does not exist in Or its value is not of type number at least one of the dictionaries')
-    return
-print (compare_cards(create_card('A', 'S'), create_card('K', 'D')))    
-print (create_card('A', 'D'))                
+#print (compare_cards(create_card('A', 'S'), create_card('K', 'D')))    
+#print (create_card('A', 'D'))                print (create_card('A', 'D'))                #print (create_card('A', 'D'))                
 def create_deck(): 
-    ranks = {'2' : '2' , '3' : '3' , '4' : '4' , '5' : '5' , '6' : '6' , '7' : '7' , '8' : '8' , '9' : '9' , '10' : '10' , 'J' : '11' , 'Q' : '12' , 'K' : '13' , 'A' : '12'}
+    ranks = {'2' : '2' , '3' : '3' , '4' : '4' , '5' : '5' , '6' : '6' , '7' : '7' , '8' : '8' , '9' : '9' , '10' : '10' , 'J' : 11 , 'Q' : 12 , 'K' : 13 , 'A' : 14}
     suites = ['H', 'C', 'D', 'S']
     deck = []
     for rank in ranks:
