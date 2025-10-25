@@ -13,11 +13,19 @@ def init_game():
     player2 = create_player()
     hend_of_player1 = player1['hand']
     hend_of_player2 = player2['hand']
+<<<<<<< HEAD
+    cards_for_player1 = Current_deck[0:26]
+    cards_for_player2 = Current_deck[26:-1]
+    add_cards_player1 = hend_of_player1.append[cards_for_player1]
+    add_cards_player2 = hend_of_player2.exsent[cards_for_player1]
+    return  {"deck": Current_deck ,"player_1": add_cards_player1,"player_2": add_cards_player2}
+=======
     hend_of_player1.extend(Current_deck[0:26])
     hend_of_player2.extend(Current_deck[26:-1])
     print (player1)
     return  {"deck": Current_deck ,"player_1": player1 ,"player_2": player1}
     
+>>>>>>> 1a1b3b517ec87f16376c8a84f6f2cd461253422b
 
 def play_round(player_1: dict, player_2: dict):
     hend_of_player1 = player_1['hand']
