@@ -16,7 +16,7 @@ def init_game():
     hend_of_player1.extend(Current_deck[0:26])
     hend_of_player2.extend(Current_deck[26:-1])
     #print (player1)
-    return  {"deck": Current_deck ,"player_1": player1 ,"player_2": player1}
+    return  {"deck": Current_deck ,"player_1": player1 ,"player_2": player2}
 
 def play_round(player_1: dict, player_2: dict):
     #hend_of_player1 = player_1['hand'].pop(-1)
@@ -39,7 +39,7 @@ def play_round(player_1: dict, player_2: dict):
         else:
             won_pile_of_player1.append(hend_of_player1)
             won_pile_of_player2.append(hend_of_player2)
-        print ('by hend p1:', len(player_1['hand']))
+        print ('by hend p1:', (range(len(player_1['hand']))))
         print ('by hend p2:', len(player_2['hand']))
         print ('by won_pile p1:', len(won_pile_of_player1))
         print ('by won_pile p2:', len(won_pile_of_player2))
